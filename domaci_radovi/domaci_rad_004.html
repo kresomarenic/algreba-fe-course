@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Krešimir Marenić" />
+    <meta name="keywords" content="HTML, school, Algebra, CV" />
+    <meta name="description" content="Login form" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <title>SVG, Canvas, Video & Audio</title>
+  </head>
+  <body style="font-family: 'Noto Sans', sans-serif">
+    <a href="./../index.html">Vrati se na početnu</a>
+
+    <h4>SVG Dinamo grb</h4>
+
+    <svg width="231" height="231">
+      <!--Left half circle -->
+      <g transform="rotate(-45, 116, 116)">
+        <path
+          d="M228,115 a100,100 0 1,0 -225,0 Z"
+          fill="white"
+          stroke="gold"
+          stroke-width="4"
+        />
+      </g>
+
+      <!-- First rectangle row -->
+      <path
+        d="M23,51 A 100 100 0 0 1 49,25 L49,51 Z"
+        fill="red"
+        stroke="gold"
+        stroke-width="4"
+      />
+
+      <path
+        d="M93,5.5 A 100 100 0 0 1 137,5.5 L137,51 L93,51 Z"
+        fill="red"
+        stroke="gold"
+        stroke-width="4"
+      />
+
+      <path
+        d="M181,25 A 100 100 0 0 1 194.5,36 L181,50  Z"
+        fill="red"
+        stroke="gold"
+        stroke-width="4"
+      />
+
+      <!-- Second rectangle row -->
+
+      <rect
+        x="49"
+        y="51"
+        width="44"
+        height="44"
+        fill="red"
+        stroke-width="4"
+        stroke="gold"
+      />
+
+      <rect
+        x="137"
+        y="51"
+        width="44"
+        height="44"
+        fill="red"
+        stroke-width="4"
+        stroke="gold"
+      />
+
+      <!-- Third rectangle row -->
+
+      <path
+        d="M5,139 A 100 100 0 0 1 4.5,95 L49,95 L49,139 Z"
+        fill="red"
+        stroke="gold"
+        stroke-width="4"
+      />
+
+      <rect
+        x="93"
+        y="95"
+        width="44"
+        height="44"
+        fill="red"
+        stroke-width="4"
+        stroke="gold"
+      />
+
+      <!-- Fourth rectangle row -->
+
+      <rect
+        x="49"
+        y="139"
+        width="44"
+        height="44"
+        fill="red"
+        stroke-width="4"
+        stroke="gold"
+      />
+
+      <!-- Fifth rectangle row  -->
+      <path
+        d="M35.5,195.5 A 100 100 0 0 1 25,183 L48,183 Z"
+        fill="red"
+        stroke="gold"
+        stroke-width="4"
+      />
+
+      <!--Right half circle -->
+      <g transform="rotate(-45, 116, 116)">
+        <path
+          d="M3,115 a100,100 0 0,0 225,0 Z"
+          fill="blue"
+          stroke="gold"
+          stroke-width="4"
+        />
+      </g>
+
+      <!-- d sign outside border -->
+
+      <path
+        d="M138,85 L175,85 L175,193 L182,193 L182,202 L165,202 L165,194 A 36 35 0 1 1 163,144 L163,95 L138,95 Z"
+        fill="white"
+        stroke="gold"
+        stroke-width="4"
+      />
+
+      <!-- d sign inside circle -->
+
+      <circle
+        cx="139"
+        cy="170"
+        r="22"
+        fill="blue"
+        stroke="gold"
+        stroke-width="4"
+      />
+    </svg>
+
+    <h4>Dinamo : Milan (in canvas)</h4>
+    <canvas
+      id="dinamoMilanCanvas"
+      width="200"
+      height="70"
+      style="border: 1px solid #d3d3d3"
+    >
+      Your browser does not support the HTML canvas tag.</canvas
+    >
+    <script>
+      var c = document.getElementById("dinamoMilanCanvas");
+      var ctx = c.getContext("2d");
+      ctx.font = "50px Noto Sans";
+      ctx.fillText("0 : 4", 50, 50);
+    </script>
+
+    <h4>Malo za Milana</h4>
+    <audio controls muted preload="metadata">
+      <source src=".././multimedia/miki_milane.mp3" type="audio/mpeg" />
+    </audio>
+
+    <h4>I za neutješne dinamovce</h4>
+    <video controls muted preload="metadata" width="25%" poster="./dinamo.jpg">
+      <source src=".././multimedia/oluja_sa_sjevera.mp4" type="video/mp4" />
+    </video>
+  </body>
+</html>
