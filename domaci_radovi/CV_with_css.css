@@ -1,0 +1,42 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  background: linear-gradient(to bottom right, #d7c3fa, #ffffff);
+  text-align: center;
+}
+
+h3:first-child {
+  text-decoration: underline;
+  color: #5d01fc;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.date-range {
+  margin-bottom: 0em;
+  margin-top: 0em;
+}
+
+.title {
+  margin-bottom: 0em;
+  margin-top: 0em;
+}
+
+.position {
+  font-weight: bold;
+}
+
+.content {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+}
+
+table {
+  font-size: small;
+}
+
+.language-row {
+  background-color: rgb(214, 212, 212);
+}
