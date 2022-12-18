@@ -1,0 +1,178 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+hr {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.container {
+  display: flex;
+  /*justify-content: space-between;*/
+  gap: 10%;
+}
+
+.homework1 {
+  margin: auto;
+  border-radius: 20px;
+  animation-name: homework1-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes homework1-animation {
+  0% {
+    width: 150px;
+    height: 50px;
+    background-color: #eb34ba;
+  }
+  25% {
+    width: 250px;
+    height: 100px;
+    background-color: #eb3434;
+  }
+  50% {
+    width: 350px;
+    height: 300px;
+    background-color: #34ebd6;
+  }
+  75% {
+    width: 500px;
+    height: 100px;
+    background-color: #3734eb;
+  }
+  100% {
+    width: 150px;
+    height: 50px;
+    background-color: #2596be;
+  }
+}
+
+.homework2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homework2 > a {
+  text-decoration: none;
+  background-color: #ffa500;
+  width: 30%;
+  text-align: center;
+  font-size: large;
+  margin: 2%;
+  padding: 0.5%;
+  color: #000000;
+  border-radius: 0px;
+  transition: border-radius 1s, color 1s;
+}
+
+.homework2 > a:hover {
+  border-radius: 25px;
+  color: #ffffff;
+}
+
+.homework3 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+  border: solid;
+  border-color: white;
+  border-width: 15px;
+  animation-name: homework3-top, homework3-right, homework3-bottom,
+    homework3-left, homework3-text;
+  animation-duration: 1s, 1s, 1s, 1s, 2s;
+  animation-delay: 0s, 1s, 2s, 3s, 4s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards, forwards, forwards, forwards, forwards;
+  animation-iteration-count: 1, 1, 1, 1, infinite;
+}
+
+@keyframes homework3-top {
+  from {
+    border-top-color: white;
+  }
+  to {
+    border-top-color: black;
+  }
+}
+
+@keyframes homework3-right {
+  from {
+    border-right-color: white;
+  }
+  to {
+    border-right-color: black;
+  }
+}
+
+@keyframes homework3-bottom {
+  from {
+    border-bottom-color: white;
+  }
+  to {
+    border-bottom-color: black;
+  }
+}
+
+@keyframes homework3-left {
+  from {
+    border-left-color: white;
+  }
+  to {
+    border-left-color: black;
+  }
+}
+
+@keyframes homework3-text {
+  0% {
+    color: white;
+  }
+  50% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.homework5 > h1 {
+  background-color: #ffffff;
+  background-size: 200%;
+}
+
+.homework5 > h1:hover {
+  background-color: #ffffff;
+  animation-name: homework5-animation;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes homework5-animation {
+  0% {
+    background-color: white;
+  }
+
+  15% {
+    background: linear-gradient(to left, #ffffff, #78c8e6 100%) right;
+  }
+
+  33% {
+    background: linear-gradient(to left, #ffffff, #78c8e6 66%) right;
+  }
+  66% {
+    background: linear-gradient(to left, #ffffff, #78c8e6 33%) right;
+  }
+  100% {
+    background: linear-gradient(to left, #ffffff, #78c8e6 0%) right;
+  }
+}

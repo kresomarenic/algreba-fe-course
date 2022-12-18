@@ -1,0 +1,69 @@
+@import "./colors";
+@import "./typography";
+@import "./mixins";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./blur-clean.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: $baseFont;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10%;
+
+  div {
+    width: 25%;
+    height: 75%;
+    border-style: solid;
+    border-color: $borderColor;
+    border-width: 5px;
+
+    transform: translateY(-1000px);
+
+    &:nth-child(1) {
+      background-color: $color1;
+      @include anim(0s);
+      //animation: fall-in 1.5s ease-out 0s forwards;
+    }
+
+    &:nth-child(2) {
+      background-color: $color2;
+      @include anim(1.5s);
+      //animation: fall-in 1.5s ease-out 1.5s forwards;
+    }
+
+    &:nth-child(3) {
+      background-color: $color3;
+      @include anim(3s);
+      //animation: fall-in 1.5s ease-out 3s forwards;
+    }
+
+    span {
+      display: block;
+      text-align: center;
+      padding-top: 40%;
+      padding-bottom: 40%;
+      font-size: 700%;
+      font-weight: bold;
+      color: $borderColor;
+    }
+  }
+}
+
+@keyframes fall-in {
+  from {
+    transform: translateY(-1000px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}

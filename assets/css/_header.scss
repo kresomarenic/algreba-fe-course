@@ -1,0 +1,32 @@
+header {
+  height: 7vh;
+  -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+  .logo {
+    width: 25%;
+    a {
+      font-size: 2em;
+      font-weight: 600;
+      background-image: linear-gradient(to left, #553c9a, #b393d3);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+  }
+  nav {
+    display: flex;
+    width: 75%;
+    justify-content: flex-end;
+    column-gap: 5%;
+    a {
+      text-decoration: none;
+      color: linear-gradient(to left, #553c9a, #b393d3);
+    }
+  }
+}

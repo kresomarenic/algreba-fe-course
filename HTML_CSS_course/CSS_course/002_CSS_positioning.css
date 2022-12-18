@@ -1,0 +1,44 @@
+.green {
+  background-color: green;
+  width: 15vw;
+  height: 10vh;
+}
+
+.blue {
+  background-color: blue;
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  top: 45vh;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.red {
+  background-color: red;
+  width: 7vw;
+  height: 15vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.red-circle {
+  background-color: red;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+p {
+  height: 15vh;
+  border-style: solid;
+}

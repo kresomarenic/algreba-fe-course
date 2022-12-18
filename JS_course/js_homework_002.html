@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS homework 2</title>
+    <link rel="stylesheet" href="js_homework.css" />
+  </head>
+  <body>
+    <main>
+      <div class="assignment">
+        <h4 class="title">Assigement:</h4>
+        <div class="description">
+          Write array that contains 5 objects. Every object represents person
+          with <code>name</code> and <code>year</code>. <br />
+          Write a function <code>"addYears"</code> which will go through given
+          array and add one year to every person. <br />
+          Write another function <code>yearAverage</code> which will go through
+          the given array and calculate the average of years of all persons.
+          <br />
+          Both functions needs to have one parameter for array to be passed to
+          them.
+        </div>
+        <div class="solution">
+          <h4 class="title">Solution:</h4>
+          <pre>
+              <code>
+                var persons = [
+                  {'name': 'John', "years": 25},
+                  {'name': 'Joe', "years": 20},
+                  {'name': 'Bertha', "years": 30},
+                  {'name': 'Sabahudin', "years": 15},
+                  {'name': 'Tomislav', "years": 35}
+                ];
+
+                function addYears(persons) {
+                  for (let i = 0; i < persons.length; i++) {
+                    persons[i].years += 1;
+                  }
+                  return persons;
+                }
+
+                function yearAverage(persons) {
+                  var totalSum = 0;
+                  for (let i = 0; i < persons.length; i++) {
+                    totalSum += persons[i].years;    
+                  }
+                  return totalSum / persons.length;
+                }
+              </code>
+            </pre>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

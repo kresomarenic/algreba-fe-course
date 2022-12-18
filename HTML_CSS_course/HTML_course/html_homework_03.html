@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Krešimir Marenić" />
+    <meta name="keywords" content="HTML, school, Algebra, CV" />
+    <meta name="description" content="Login form" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Forma sa input type-ovima</title>
+  </head>
+  <body style="font-family: 'Noto Sans', sans-serif">
+    <h2>Short survey form with all input type fields</h2>
+
+    <form method="POST" autocomplete="on">
+      <!-- User data -->
+      <fieldset>
+        <legend><h4>User data:</h4></legend>
+        <label for="name">Name: </label>
+        <input type="name" name="name" id="name" /> <br />
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" /> <br />
+
+        <label for="phoneNumber">Phone number: </label>
+        <input
+          type="tel"
+          name="phoneNumber"
+          id="phoneNumber"
+          placeholder="+385 9X XXX XXX(X)"
+        />
+        <br />
+
+        <label for="dateOfBirth">Date of birth:</label>
+        <input type="date" name="dateOfBirth" id="dateOfBirth" /> <br />
+
+        <label for="portfolioUrl">Portfolio url: </label>
+        <input type="url" name="portfolioUrl" id="portfolioUrl" /> <br />
+
+        <label for="password">Your desired password: </label>
+        <input type="password" name="password" id="password" /> <br />
+      </fieldset>
+
+      <!-- Preferences -->
+      <fieldset>
+        <legend><h4>Your preferences:</h4></legend>
+
+        <fieldset>
+          <legend>What transport do you use to go to work?</legend>
+          <input
+            type="checkbox"
+            name="usedTransport"
+            id="usedTransport1"
+            value="car"
+          />
+          <label for="usedTransport1">Car </label> <br />
+          <input
+            type="checkbox"
+            name="usedTransport"
+            id="usedTransport2"
+            value="bus_train"
+          />
+          <label for="usedTransport2">Bus / Train </label> <br />
+          <input
+            type="checkbox"
+            name="usedTransport"
+            id="usedTransport3"
+            value="bike"
+          />
+          <label for="usedTransport3">Bike </label> <br />
+          <input
+            type="checkbox"
+            name="usedTransport"
+            id="usedTransport4"
+            value="electric_scooter_segway"
+          />
+          <label for="usedTransport4">Electric scooter / Segway </label>
+          <br />
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Choose your most favorite way to go to work</legend>
+          <input
+            type="radio"
+            name="favoriteTransport"
+            id="favoriteTransport1"
+            value="car"
+          />
+          <label for="favoriteTransport1">Car </label> <br />
+          <input
+            type="radio"
+            name="favoriteTransport"
+            id="favoriteTransport2"
+            value="bus_train"
+          />
+          <label for="favoriteTransport2">Bus / Train </label> <br />
+          <input
+            type="radio"
+            name="favoriteTransport"
+            id="favoriteTransport3"
+            value="bike"
+          />
+          <label for="favoriteTransport3">Bike </label> <br />
+          <input
+            type="radio"
+            name="favoriteTransport"
+            id="favoriteTransport4"
+            value="electric_scooter_segway"
+          />
+          <label for="favoriteTransport4">Electric scooter / Segway </label>
+          <br />
+        </fieldset>
+      </fieldset>
+
+      <!-- Favorites -->
+      <fieldset>
+        <legend><h4>Favorites:</h4></legend>
+
+        <label for="colorPicker">Pick a favorite color: </label> <br />
+        <table>
+          <tr>
+            <td>
+              R<input
+                type="range"
+                name="colorPickerRed"
+                id="colorPickerRed"
+                min="0"
+                max="255"
+                onchange="changeColorPicker()"
+              />
+              <br />
+              G<input
+                type="range"
+                name="colorPickerGreen"
+                id="colorPickerGreen"
+                min="0"
+                max="255"
+                onchange="changeColorPicker()"
+              />
+              <br />
+              B<input
+                type="range"
+                name="colorPickerBlue"
+                id="colorPickerBlue"
+                min="0"
+                max="255"
+                onchange="changeColorPicker()"
+              />
+            </td>
+            <td>
+              <input type="color" name="favoriteColor" id="favoriteColor" />
+
+              <br />
+            </td>
+          </tr>
+        </table>
+
+        <label for="favoriteNumber">Favorite number: </label>
+        <input type="number" name="favoriteNumber" id="favoriteNumber" /> <br />
+
+        <label for="favoritePicture">Upload your favorite picture: </label>
+        <input type="file" name="favoritePicture" id="favoritePicture" />
+      </fieldset>
+
+      <!-- Contact times -->
+      <fieldset>
+        <legend><h4>Desired time for contact</h4></legend>
+
+        <label for="desiredMonth">Month: </label>
+        <input type="month" name="desiredMonth" id="desiredMonth" />
+
+        <label for="desiredWeek">Week: </label>
+        <input type="week" name="desiredWeek" id="desiredWeek" />
+
+        <label for="desiredTime">Time: </label>
+        <input type="time" name="desiredTime" id="desiredTime" /> <br />
+
+        <label for="specificDateTime">Specific date and time: </label>
+        <input
+          type="datetime-local"
+          name="specificDateTime"
+          id="specificDateTime"
+        />
+        <br />
+      </fieldset>
+
+      <br />
+
+      <!-- Feedback -->
+      <label for="feedback"
+        >Please write any additional feedback for us:
+      </label>
+      <br />
+      <textarea
+        name="message"
+        id="message"
+        style="width: 50em; height: 10em; background-color: aliceblue"
+        placeholder="Type your message here"
+      ></textarea>
+
+      <br /><br />
+
+      <!-- Sumbit -->
+      <input type="submit" value="Save your profile" />
+      <input type="reset" name="reset" id="reset" value="Reset you answers" />
+      <br />
+    </form>
+  </body>
+
+  <script>
+    function changeColorPicker() {
+      r = colorPickerRed.value;
+      g = colorPickerGreen.value;
+      b = colorPickerBlue.value;
+      favoriteColor.value = rgbToHex(r, g, b);
+    }
+
+    function rgbToHex(r, g, b) {
+      const rgb = (r << 16) | (g << 8) | (b << 0);
+      return "#" + (0x1000000 + rgb).toString(16).slice(1);
+    }
+  </script>
+</html>
