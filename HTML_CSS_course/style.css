@@ -86,34 +86,6 @@ main {
   justify-content: space-around;
 }
 
-/*
-.assigements {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  //row-gap: 10%;
-
-  .html-assigements {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    width: 50%;
-  }
-
-  .css-assigements {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    width: 50%;
-  }
-}
-
-
-.exam {
-  display: flex;
-  justify-content: space-around;
-}
-*/
 .card {
   width: 12vw;
   height: 12vw;
