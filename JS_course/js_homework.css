@@ -50,4 +50,25 @@ main {
 code {
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
   line-height: 1.5em;
-}/*# sourceMappingURL=js_homework.css.map */
+}
+
+/*
+.homework3-solution {
+  margin: 10%;
+
+  .weather-search {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 5;
+
+    #city-input {
+      outline: 0;
+      background-color: transparent;
+      border: 0;
+      border-bottom: 2px solid black;
+      color: white;
+      transition: 0.4s ease;
+      letter-spacing: 1px;
+    }
+  }
+}*//*# sourceMappingURL=js_homework.css.map */

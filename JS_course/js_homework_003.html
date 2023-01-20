@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS homework 3</title>
+    <link rel="stylesheet" href="js_homework.css" />
+  </head>
+  <body>
+    <main>
+      <div class="assignment">
+        <h4 class="title">Assignment:</h4>
+        <div class="description">
+          Create weather app by connection to OpenWeather API and fetch current
+          data for given location.
+          <br />
+          Data to display:
+          <br />
+          - temperature / clouds / humidity / wind / pressure / type of weather
+        </div>
+        <div class="solution">
+          <h4 class="title">Solution:</h4>
+
+          <div class="homework3-solution">
+            <div class="weather-search">
+              <input id="city-input" type="text" placeholder="Unesi grad" />
+              <button id="search-btn">Traži</button>
+            </div>
+
+            <div class="weather-display">
+              <h1 id="city-el"></h1>
+              <img id="icon-el" src="" />
+              <h3 id="temperature-el"></h3>
+              <h3 id="clouds-el"></h3>
+              <div id="humidity-el"></div>
+              <div id="wind-el"></div>
+              <div id="pressure-el"></div>
+              <div id="weather-type-el"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script defer src="js_homework_003.js"></script>
+  </body>
+</html>
