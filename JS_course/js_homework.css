@@ -52,6 +52,12 @@ code {
   line-height: 1.5em;
 }
 
+.task {
+  width: 25vw;
+  display: flex;
+  justify-content: space-between;
+}
+
 .strikethrough {
   text-decoration: line-through;
 }
